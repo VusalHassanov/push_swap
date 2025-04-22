@@ -1,0 +1,3 @@
+[submodule "lib_ft"]
+    path = lib_ft
+    url = https://github.com/VusalHassanov/lib_ft.git
