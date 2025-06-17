@@ -6,7 +6,7 @@
 /*   By: vhasanov <vhasanov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 21:42:25 by vhasanov          #+#    #+#             */
-/*   Updated: 2025/06/13 01:25:04 by vhasanov         ###   ########.fr       */
+/*   Updated: 2025/06/13 19:38:08 by vhasanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PUSH_SWAP_H
 
 # include "lib_ft/libft.h"
-# include "libftprintf.a/ft_printf.h"
 # include <limits.h>
 
 typedef struct t_Node

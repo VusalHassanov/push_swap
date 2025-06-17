@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vhasanov <vhasanov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/06 01:00:57 by vhasanov          #+#    #+#             */
-/*   Updated: 2025/06/12 15:00:53 by vhasanov         ###   ########.fr       */
+/*   Created: 2025/01/17 19:53:05 by vhasanov          #+#    #+#             */
+/*   Updated: 2025/01/21 18:42:20 by vhasanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-long	ft_atoi(const char *str)
+size_t	ft_putstr(char *str)
 {
-	int		i;
-	int		sign;
-	long	result;
+	size_t	i;
+	size_t	count;
 
 	i = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	count = 0;
+	if (str == NULL)
+		return (count = write(1, "(null)", 6));
+	while (str[i])
 	{
-		if (str[i] == '-')
-			sign = -1;
+		count = count + ft_putchar(str[i]);
 		i++;
 	}
-	while (ft_isdigit(str[i]))
-	{
-		result = result * 10 + (str[i] - '0');
-		i++;
-	}
-	return (result * sign);
+	return (count);
 }

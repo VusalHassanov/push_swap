@@ -6,12 +6,11 @@
 /*   By: vhasanov <vhasanov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/11 23:43:21 by vhasanov          #+#    #+#             */
-/*   Updated: 2025/06/13 01:44:10 by vhasanov         ###   ########.fr       */
+/*   Updated: 2025/06/17 22:32:40 by vhasanov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_push_swap.h"
-#include <stdio.h>
 
 int	*populate_stack_and_array(int size, char **argv, t_Stack *stack)
 {
